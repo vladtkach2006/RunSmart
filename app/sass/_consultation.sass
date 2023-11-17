@@ -12,11 +12,14 @@
     font-size: 1.25rem
     font-weight: 500
     line-height: 30px
+    max-width: 426px
 .feed-form
   margin-top: 36px
   display: flex
   flex-direction: column
   &__name, &__phone, &__email
-    @include form-input
+    @include form
+  &__email
+    margin-bottom: 17px
   &__button
     @include button
